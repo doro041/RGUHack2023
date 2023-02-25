@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CARGO CALCULATOR</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  </head>
+  <body>
+   
+    <div class="header">
+      <h1>CALCULATOR</h1>
+      <img src="logo1.png" alt="logo" width="100" height="100">
+
+    </div>
+ 
+    <div class="calculator">
+        
+        <button id="option1">A->B</button>
+        <button id="option2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-recycle" viewBox="0 0 16 16">
+            <path d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z"/>
+          </svg></button>
+      
+        <script>
+          const option1Btn = document.getElementById("option1");
+          const option2Btn = document.getElementById("option2");
+      
+          // Add event listeners to the buttons
+          option1Btn.addEventListener("click", () => {
+            console.log("Option 1 selected");
+           
+          });
+      
+          option2Btn.addEventListener("click", () => {
+            console.log("Option 2 selected");
+            // Add code to handle the Circle option
+          });
+        </script>
+      <form>
+        <label for="from">FROM 
+            <br>
+            <input type="text" id="from" name="from" placeholder="Departing from">
+            
+          </label>
+          
+        <br>
+        <label for="to">TO</label>
+        <input type="select" id="to" name="to" placeholder="Arriving to">
+        <br>
+        <label for="weight" class="weight">LOAD
+            <br>
+            
+        <input type="number" id="weight" name="weight" placeholder="Cargo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+          </svg>
+        </label>
+      </form>
+      <img src="Crosshair.png" alt="compass" width="100" height="100" justify-content:center>
+        <br>
+    <button>START</button>
+    </div>
+
+    <div class="map">
+        <iframe width='100%'height='100%' frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=26.502456665039066%2C43.03677585761058%2C27.359390258789066%2C43.49328094075747&amp;layer=mapnik&amp;marker=43.265706324114475%2C26.930923461914062" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=43.2657&amp;mlon=26.9309#map=11/43.2655/26.9309">View Larger Map</a></small>
+     
+      
+      
+    </div>
+  
+
+  </body>
+</html>
