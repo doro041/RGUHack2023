@@ -14,7 +14,8 @@
 }
 
 img{
-   align-items:end
+   align-items:start;
+
 
 }
 
@@ -25,10 +26,17 @@ body{
     background-color: #f6f6f6;
     
 }
-  
+  .map,.calculator{
+    width:50%;
+    height:100vh;
+
+    
+   
+  }
   .map {
     background-color: #f6f6f6;
     float: right;
+      
     width: 50%;
   height: 100vh;
   }
@@ -41,7 +49,7 @@ body{
     float: left;
   }
    button{
-    background-color: #2266E9;
+    background-color: #779de3;
     color: #fff;
     width: 40%;
     height: 80px;
@@ -71,7 +79,18 @@ body{
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: bold;
+    color: #fff;
    
+  }
+  label {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top:10px;
+    margin-left: 50px;
+   
+
   }
   
   form input {
@@ -90,4 +109,144 @@ body{
     outline: none;
     background-color: #e0e0e0;
   }
+  .image-container {
+    display: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* adjust to fit your design */
+}
+
+.image-container img {
+  max-width: 100%; /* adjust to fit your design */
+  max-height: 100%; /* adjust to fit your design */
+  object-fit: contain; /* maintain aspect ratio of image */
+}
+
+input[type=text] {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    border-radius: 30px;
+    background: #f1f1f1;
+    margin-left:50px;
+    margin-top: 30px;
+    margin-bottom:30px;
+    margin-right:50px;
+    width:70%;
+    height:30px;
+
+  }
   
+.search-button {
+    float: center;
+    width: 10%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+
+   
+  }
+
+
+  .weight input {
+    width: 75%;
+    margin-top:60px;
+  }
+
+  .from input {
+    width: 75%;
+   
+  }
+
+  .to input {
+    width: 75%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  button {
+    margin-bottom: 1rem; /* add some space between the button and the image */
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+   
+    width: 500px;
+    height: 500px;
+  }
+ 
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+   padding:50px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+  
+  .navbar ul li {
+    font-size: 16px;
+    margin-right: 10px;
+    
+  }
+  
+  .navbar ul li {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .slider {
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    color:green;
+  }
+  
+  label[for="distance"] {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top:10px;
+    margin-left: 50px;
+
+  }
+
+  navbar2{
+    background-color: #2266E9;
+    color: #fff;
+    padding: 30px;
+    text-align: end;   
+    justify-content: end;
+    align-items: end;
+    display: flex;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  slidecontainer {
+    width: 100%;
+  }
